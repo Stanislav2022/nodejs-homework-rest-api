@@ -30,7 +30,8 @@ router.put(
 router.patch(
   "/:contactId/favorite",
   isValidId,
-  isBodyFavorite(schemas.ubdateFavoriteSchema),
+  isBodyFavorite,
+  validateBody(schemas.ubdateFavoriteSchema),
   ctrl.updateStatusContact
 );
 module.exports = router;
