@@ -7,6 +7,7 @@ const getAll = async (req, res) => {
 };
 
 const getById = async (req, res) => {
+  console.log(req.params);
   const { contactId } = req.params;
   const result = await Contact.findById(contactId);
 
