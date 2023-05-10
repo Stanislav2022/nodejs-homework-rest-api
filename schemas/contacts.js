@@ -7,6 +7,11 @@ const addSchema = Joi.object({
   favorite: Joi.boolean(),
 });
 
+const ubdateFavoriteSchema = Joi.object({
+  favorite: Joi.boolean(),
+});
+
 module.exports = {
   addSchema,
+  ubdateFavoriteSchema,
 };
